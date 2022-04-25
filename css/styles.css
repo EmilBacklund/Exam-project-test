@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212121;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+}
+
+.container {
+    width: 1040px;
+    height: 100vh;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+aside {
+    flex: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.navigation {
+    list-style: none;
+}
+
+.navigation a {
+color: #fff;
+text-decoration: none;
+font-size: 24px;
+font-weight: 200;
+}
+
+.navigation a:hover {
+font-weight: 400;
+}
+
+.active-nav a {
+    font-weight: 400;
+}
+
+.navigation--menu {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+main {
+    flex: 1;
+}
+
+.promote-cards {
+    position: relative;
+    height: 100%;
+}
+
+.card {
+    width: 40%;
+    height: 60vh;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.card-topleft {
+    top: 10%;
+    left: 10%;
+}
+
+.card-rightbottom {
+    bottom: 10%;
+    right: 0;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.next-image {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    height: 10vh;
+    width: 10vh;
+    cursor: pointer;
+}
+
+.next-text {
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    bottom: 14%;
+    left: 13%;
+    cursor: pointer;
+    font-weight: 200;
+}
+
+.previous-image {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    height: 10vh;
+    width: 10vh;
+}
+
+.previous-text {
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top: 14%;
+    right: 3%;
+    cursor: pointer;
+    font-weight: 200;
+}
+
+.content-card {
+    position: absolute;
+    background-color: #2C2B2B;
+    width: 30%;
+    height: 60vh;
+    border-radius: 20px;
+}
+
+.topleft {
+    top: 15%;
+    left: 14%;
+    z-index: -10;
+}
+
+.bottomright {
+    bottom: 15%;
+    right: 4%;
+    z-index: -10;
+}
+
+.lightmode {
+    background: url("/images/lightmode.svg");
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    height: 56px;
+    width: 56px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
